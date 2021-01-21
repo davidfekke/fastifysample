@@ -23,7 +23,6 @@ fastify.route({
     // E.g. check authentication
   },
   handler: async (request, reply) => {
-    console.log(request.query)
     return { hello: request.query.name }
   }
 });
